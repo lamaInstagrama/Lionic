@@ -234,11 +234,12 @@ body {
   background-position: center;
 }
 
-.hero-content {
+.hero__content {
+  display: flex;
   flex-direction: column;
 }
 
-.hero-title {
+.hero__title {
   margin: 0;
   margin-bottom: 26px;
   max-width: 529px;
@@ -248,7 +249,7 @@ body {
   color: #1C1C1C;
 }
 
-.hero-desc {
+.hero__desc {
   margin: 0;
   margin-bottom: 34px;
   max-width: 471px;
@@ -258,19 +259,20 @@ body {
   color: #787878;
 }
 
-.hero-btn-secure {
-  max-width: 250px;
+.hero__btn-secure {
+  display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 250px;
 }
 
-.hero-btn {
+.hero__btn {
   padding: 19px 58px;
   align-self: flex-start;
   margin-bottom: 14px;
 }
 
-.hero-secure {
+.hero__secure {
   padding-left: 17px;
   font-size: 11px;
   font-weight: 300;
