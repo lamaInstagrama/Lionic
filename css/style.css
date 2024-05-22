@@ -620,13 +620,13 @@ body {
 }
 
 /* join us */
-.join-title {
+.join__title {
   margin: 0;
   margin-bottom: 22px;
   text-align: center;
 }
 
-.join-descr {
+.join__descr {
   margin: 0;
   margin-bottom: 30px;
   text-align: center;
@@ -636,13 +636,15 @@ body {
   padding: 0 55px;
 }
 
-.form-top {
+.form__top {
+  display: flex;
   margin: 0;
   margin-bottom: 19px;
   justify-content: space-between;
 }
 
-.form-top-left {
+.form__top-left {
+  display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0;
@@ -650,11 +652,11 @@ body {
   width: 49%;
 }
 
-.form-top-right {
+.form__top-right {
   width: 49%;
 }
 
-.input-field {
+.form__field {
   padding: 15px 28px;
   width: 251px;
   height: 60px;
@@ -663,23 +665,23 @@ body {
   transition: border-color .3s, background-color .3s;
 }
 
-.input-field:focus {
+.form__field:focus {
   background-color: rgba(113, 167, 226, 0.2);
   border: 1px solid #71A7E2;
   outline: none;
 }
 
-.input-field:hover {
+.form__field:hover {
   border: 1px solid #71A7E2;
 }
 
-.input-field:active {
+.form__field:active {
   background-color: #FFF;
   border: 1px solid #0E3B6C;
   color: #1C1C1C;
 }
 
-.input-field:nth-child(-n+2) {
+.form__field:nth-child(-n+2) {
   margin-bottom: 19px;
 }
 
@@ -691,7 +693,7 @@ body {
   background-position: 90% 50%;
 } */
 
-.form-textarea {
+.form__textarea {
   padding: 15px 28px;
   width: 100%;
   height: 100%;
@@ -700,12 +702,14 @@ body {
   resize: none;
 }
 
-.form-bottom {
+.form__bottom {
+  display: flex;
   flex-direction: column;
   align-items: end;
 }
 
 .wrapper {
+  display: flex;
   flex-direction: column;
   align-items: center;
 }
@@ -716,17 +720,17 @@ body {
   border-radius: 50px;
 }
 
-.confirm-check {
+.confirm__check {
   margin-right: 8px;
 }
 
-.confirm-desc {
+.confirm__desc {
   font-size: 12px;
   font-weight: 300;
   color: #787878;
 }
 
-.user-agreement {
+.confirm__agreement {
   color: #3172B9;
   border-bottom: 1px solid #3172B9;
 }
