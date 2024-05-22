@@ -73,10 +73,10 @@ body {
 .container {
   max-width: 1200px;
   padding: 0 15px;
-  margin: 0 100px;
+  margin: 0 auto;
 }
 
-.section-title {
+.section__title {
   margin: 0;
   padding: 0;
   margin-bottom: 42px;
@@ -86,7 +86,7 @@ body {
   color: #1C1C1C;
 }
 
-.section-descr {
+.section__descr {
   margin: 0;
   padding: 0;
   margin-bottom: 54px;
@@ -285,18 +285,23 @@ body {
 }
 
 /* services */
-.services-title {
+.services__title {
   margin-bottom: 21px;
   text-align: center;
 }
 
-.services-descr {
+.services__descr {
   margin: 0;
   margin-bottom: 54px;
   text-align: center;
 }
 
-.services-item {
+.services__list {
+  display: flex;
+}
+
+.services__item {
+  display: flex;
   flex-direction: column;
   align-items: center;
   padding: 62px 30px;
@@ -305,27 +310,27 @@ body {
   transition: background-color 0.3s, border .3s;
 }
 
-.services-item:hover {
+.services__item:hover {
   background-color: #3172B9;
   border: 1px solid #3172B9;
 }
 
-.services-item:nth-child(4n) {
+.services__item:nth-child(4n) {
   margin-right: 0;
 }
 
-.services-item-icon {
+.services__icon {
   margin: 0;
   margin-bottom: 27px;
   fill: #3172B9;
   transition: fill .3s;
 }
 
-.services-item:hover .item-icon-path {
+.services__item:hover .services__path {
   fill: #FFF;
 }
 
-.services-item-title {
+.services-card__title {
   margin: 0;
   margin-bottom: 15px;
   font-size: 20px;
@@ -335,11 +340,11 @@ body {
   transition: color .3s;
 }
 
-.services-item:hover .services-item-title {
+.services__item:hover .services-card__title {
   color: #FFF;
 }
 
-.services-item-desc {
+.services-card__desc {
   margin: 0;
   padding: 0;
   text-align: center;
@@ -350,7 +355,7 @@ body {
   transition: color .3s;
 }
 
-.services-item:hover .services-item-desc {
+.services__item:hover .services-card__desc {
   color: #FFF;
 }
 
