@@ -482,22 +482,26 @@ body {
 }
 
 /* clients */
-.clients-title {
+.clients__title {
   font-size: 36px;
   font-weight: lighter;
 }
 
-.clients-list-item {
+.clients__list {
+  display: flex;
+}
+
+.clients__item {
   margin: 0;
   padding: 51px 53px 32px 36px;
   ;
 }
 
-.clients-list-item:not(:nth-child(3n)) {
+.clients__item:not(:nth-child(3n)) {
   margin-right: 30px;
 }
 
-.clients-item-descr {
+.clients__descr {
   margin-bottom: 33px;
   font-size: 14px;
   font-weight: 300;
@@ -505,29 +509,30 @@ body {
   color: #787878;
 }
 
-.clients-user {
+.user {
+  display: flex;
   padding-top: 28px;
   border-top: 1px solid #E4E4E4;
   ;
   /* outline: 1px solid coral; */
 }
 
-.clients-avatar {
+.user__avatar {
   margin-right: 17px;
 }
 
-.clients-text {
+.user__data {
   align-self: center;
 }
 
-.clients-name {
+.user__name {
   font-size: 17px;
   font-weight: 400;
   line-height: 180%;
   color: #1C1C1C;
 }
 
-.clients-post {
+.user__status {
   font-size: 14px;
   font-weight: 300;
   line-height: 180%;
