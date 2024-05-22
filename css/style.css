@@ -360,94 +360,99 @@ body {
 }
 
 /* articles */
-.articles-title {
+.articles__title {
   margin: 0;
   margin-bottom: 42px;
   font-size: 36px;
   font-weight: lighter;
 }
 
-.articles-list {
+.articles__list {
+  display: flex;
   flex-wrap: wrap;
 }
 
-.articles-list-item {
+.articles__item {
   flex-grow: 1;
   width: 570px;
   margin-bottom: 30px;
 }
 
-.articles-list-item:not(:nth-child(2n)) {
+.articles__item:not(:nth-child(2n)) {
   margin-right: 30px;
 }
 
-.blog-preview {
+.articles__blog {
   transition: background-color .3s;
 }
 
+.blog__link {
+  display: flex;
+}
+
 /* focus */
-.blog-preview-link:focus {
+.blog__link:focus {
   background-color: #71A7E2;
 }
 
-.blog-preview-link:focus .blog-preview-time {
+.blog__link:focus .blog__time {
   color: #FFF;
 }
 
-.blog-preview-link:focus .blog-preview-title {
+.blog__link:focus .blog__title {
   color: #FFF;
 }
 
-.blog-preview-link:focus .blog-preview-descr {
+.blog__link:focus .blog__descr {
   color: #FFF;
 }
 
 /* hover */
-.blog-preview:hover {
+.articles__blog:hover {
   background-color: #3172B9
 }
 
-.blog-preview:hover .blog-preview-time {
+.articles__blog:hover .blog__time {
   color: #FFF;
 }
 
-.blog-preview:hover .blog-preview-title {
+.articles__blog:hover .blog__title {
   color: #FFF;
 }
 
-.blog-preview:hover .blog-preview-descr {
+.articles__blog:hover .blog__descr {
   color: #FFF;
 }
 
 /* active */
-.blog-preview:active {
+.articles__blog:active {
   background-color: #0E3B6C;
 }
 
-.blog-preview:active .blog-preview-time {
+.articles__blog:active .blog__time {
   color: #FFF;
 }
 
-.blog-preview:active .blog-preview-title {
+.articles__blog:active .blog__title {
   color: #FFF;
 }
 
-.blog-preview:active .blog-preview-descr {
+.articles__blog:active .blog__descr {
   color: #FFF;
 }
 
-.blog-preview-img {
+.blog__img {
   height: 100%;
 }
 
-.blog-preview-text {
+.blog__text {
   padding: 0;
   margin: 0;
   padding-left: 30px;
   padding-top: 23px;
 }
 
-.blog-preview-time {
+.blog__time {
   font-size: 10px;
   font-weight: 300;
   line-height: 150%;
@@ -455,7 +460,7 @@ body {
   transition: color 0.3s;
 }
 
-.blog-preview-title {
+.blog__title {
   margin: 0;
   margin-bottom: 15px;
   font-size: 20px;
@@ -465,7 +470,7 @@ body {
   transition: color 0.3s;
 }
 
-.blog-preview-descr {
+.blog__descr {
   margin: 0;
   max-width: 210px;
   font-size: 14px;
