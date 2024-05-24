@@ -95,3 +95,279 @@
         margin-right: 20px;
       }
 }
+
+@media (max-width: 576px) {
+    :root {
+        --gap: 15px;
+    }
+
+    .section-offset {
+        padding: 61px 0;
+    }
+
+    .section__title {
+        margin-bottom: 14px;
+    }
+
+    /* header */
+    .header {
+        padding: 16.5px 0;
+    }
+
+    .header__logo {
+        width: 80px;
+
+    }
+
+    /* hero */
+    .hero {
+        padding-top: 28px;
+        padding-bottom: 0;
+        background-image: none;
+    }
+    
+    .hero__content {
+        width: 100%;
+    }
+
+    .hero__title {
+        margin-bottom: 15px;
+    }
+
+    .hero__desc {
+        margin-bottom: 15px;
+        width: 100%;
+        line-height: 157%;
+    }
+
+    .hero__btn-secure {
+        max-width: 100%;
+        /* padding: 19.5px 58px; */
+    }
+
+    .hero__btn {
+        width: 100%;
+        margin-bottom: 17px;
+    }
+
+    /* services */
+    .services__title {
+        /* margin-bottom: 14px; */
+        text-align: left;
+      }
+
+    /* .section__descr {
+        font-size: 16px;
+        line-height: 22;
+    } */
+
+    .services__descr {
+        margin-bottom: 15px;
+        text-align: left;
+        letter-spacing: 0.3px;
+    }
+
+    .services__list {
+        row-gap: 20px;
+    }
+
+    .services__item {
+        padding: 14px 17px;
+        min-height: 222px;
+    }
+
+    .services__icon {
+        height: 42px;
+        margin-bottom: 16px;
+    }
+
+    .services-card__title {
+        margin-bottom: 3px;
+        font-size: 16px;
+    }
+
+    .services-card__desc {
+        font-size: 12px;
+    }
+
+  
+    /* articles */
+    .articles__title {
+        margin-bottom: 12px;
+    }
+
+    .articles__list {
+        --offsets: 0;
+    }
+
+    .articles__item {
+        min-height: 191px;
+    }
+
+    .blog__link {
+        flex-direction: row;
+    }
+
+    .blog__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 15px 15px;
+    }
+
+    .blog__time {
+        display: block;
+        margin-bottom: 4px;   
+    }
+
+    .blog__title {
+        margin-bottom: 2px;
+    }
+
+    .blog__img {
+        max-width: 85px;
+    }
+
+    /* clients */
+    .clients__list {
+        --offsets: 0;
+    }
+
+    .clients__item {
+        padding: 4px 20px;
+        min-height: 345px;
+    }
+
+    .user {
+        padding-top: 25px;
+    }
+
+    .user__avatar {
+        margin-right: 12px;
+    }
+
+    .user__name {
+        line-height: 120%;
+    }
+
+    /* contacts */
+    .contacts__list {
+        --offsets: 0;
+        row-gap: 30px;
+    }
+
+    .contacts__item {
+        padding-top: 39px;
+    }
+
+    .contacts__title {
+        padding-top: 0;
+    }
+
+    .contacts__caption {
+        margin-bottom: 9px;
+    }
+
+    /* join */
+    .join__title {
+        text-align: left;
+    }
+
+    .join__descr {
+        margin-bottom: 16px;
+        text-align: left;
+        letter-spacing: 0.3px;
+    }
+
+    .form__top {
+        margin-bottom: 16px;
+        flex-direction: column;
+        gap: var(--gap);
+    }
+
+    .form__top-left,
+    .form__top-right {
+        width: 100%;
+    }
+
+    /* .form__top-right {
+        min-height: 240px;
+    } */
+
+    .form__field {
+        padding-left: 19px;
+    }
+
+    .form__textarea {
+        height: 240px;
+    }
+
+    .form__bottom {
+        align-items: center;
+    }
+
+    .wrapper {
+        width: 100%;
+    }
+
+    .btn-join {
+        margin-bottom: 14px;
+        width: 100%;
+    }
+
+    /* footer */
+    .footer {
+        padding: 30px 0;
+    }
+
+    .footer__right {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 27px;
+    }
+
+    .footer-nav .nav__list {
+        flex-wrap: wrap;
+        row-gap: 15px;
+        margin-bottom: 31px;
+    }
+
+    .social__img {
+        width: 20px;
+        height: 18px;
+    }
+
+    .social-item-mail {
+        width: 24px;
+        height: 20px;
+    }
+
+    .social__item:not(:last-child) {
+        margin-right: 30px;
+      }
+    
+    .footer__left {
+        position: relative;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .footer__left::after {
+        content: "";
+        position: absolute;
+        width: calc(100% + 30px);
+        height: 1px;
+        top: 60px;
+        left: -15x;
+        background-color: #C4C4C4;
+    }
+
+    .footer__logo {
+        align-self: flex-start;
+        max-width: 80px;
+        margin-bottom: 46px;
+    }
+
+    
+
+}
