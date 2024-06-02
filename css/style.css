@@ -703,13 +703,19 @@ body {
 }
 
 
-/* .input-select {
+.input-select {
   -webkit-appearance: none;
+  /* Стиль для Safari */
+  -moz-appearance: none;
+  /* Стиль для Firefox */
+  appearance: none;
+  /* Стиль для прочих браузеров */
+  background-color: inherit;
   background-image: url("../img/arrow-dropdown.svg");
   background-repeat: no-repeat;
   background-size: 14px;
-  background-position: 90% 50%;
-} */
+  background-position: 93% 50%;
+}
 
 .form__textarea {
   padding: 15px 28px;

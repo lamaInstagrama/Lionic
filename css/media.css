@@ -9,42 +9,45 @@
   /* header */
 
 
+  /* Выезжающее бургер меню справа */
+  :root {
+    --menu-size: 180px;
+    --burger-color: #3172B9;
+  }
+
+  /* Располагаю блок со списком справа, за границами экрана + оформление */
   .header__nav {
     /* display: none; */
     position: absolute;
-    /* Располагаю блок со списком справа наверху + заливка */
     margin: 0;
-    right: -250px;
-    /* right: 0; */
+    right: calc(-1 * var(--menu-size));
     top: 0;
-    width: 250px;
+    width: var(--menu-size);
     padding-top: 75px;
-    background-color: #4f47ac;
+    z-index: 2;  /* Чтобы перекрыть при выдвижении все кнопки */
+    background-color: #3172B9;
+    outline: 1px solid black;
     visibility: hidden;
-    transition: transform .5s, visibility .5s;
+    transition: transform .5s, visibility .5s;  /* Появление этого окна справа */
+    will-change: transform;
   }
 
+  /* Элементы списка располагаю по вертикали с отступом между элементов */
   .nav__list {
-    /* Элементы списка располагаю по вертикали с отступом между элементов */
     flex-direction: column;
-    /* align-items: center; */
     row-gap: 15px;
     padding: 10px;
   }
 
+  /* Изменяю стиль ссылок, которые находятся внутри элементов */
   .nav__link {
     display: block;
-    /* Изменяю стиль ссылок, которые находятся внутри элементов */
     color: #FFF;
-    font-size: 20px;
+    font-size: 24px;
   }
 
-
-
-
-
+  /* Стилизация самой кнопки */
   .btn-burger {
-    --burger-color: #3172B9;
     display: block;
     position: relative;
     width: 40px;
@@ -59,10 +62,6 @@
     background-color: #71A7E2;
   }
 
-  .btn-burger:hover .btn-burger__line {
-    background-color: #FFF;
-  }
-
 
   .btn-burger__line {
     position: absolute;
@@ -73,9 +72,13 @@
     border-radius: inherit;
     background-color: var(--burger-color);
 
-    transition: top .3s, bottom .3s, transform .3s, opacity .3s, background-color .3s;
+    transition: top .5s, bottom .5s, transform .5s, opacity .5s, background-color .5s;
     will-change: transform;  /* Чтобы закешировать анимацию именно этого свойства */
 
+  }
+
+  .btn-burger:hover .btn-burger__line {
+    background-color: #FFF;
   }
 
   .btn-burger__line:nth-child(1) {
@@ -95,7 +98,9 @@
   /* Крестик */
   /*
   Эти селекторы срабатывают, если есть класс open.
-  Этот класс я назначил header.
+  Линии становятся крестиком, меняют свой цвет.
+  У кнопки бургера меняется border.
+  Выезжает справа .header__nav
   */
   .header.open .btn-burger__line:nth-child(1) {
     top: 50%;
@@ -126,20 +131,9 @@
 
 
 
-  /* .header.open .header__btn {
-    opacity: 0;
-  } */
-
-
-
-
-
-
-
   .header__btn {
     margin-right: 7px;
     padding: 11px 21px;
-    /* transition: opacity .3s, z-index .3s; */
   }
 
   /* services */
