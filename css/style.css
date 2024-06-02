@@ -17,6 +17,13 @@ img {
   max-width: 100%;
 }
 
+/* этот блок нужен, чтобы скрывать содержимое бургер меню */
+.body-wrapper {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
 @font-face {
   font-family: 'OpenSans';
   src: local('OpenSans-Light'),
@@ -121,9 +128,9 @@ body {
   margin-right: auto;
 }
 
-.nav__item:not(:last-child) {
+/* .nav__item:not(:last-child) {
   margin-right: 52px;
-}
+} */
 
 .header__nav {
   margin-right: 52px;
@@ -131,6 +138,7 @@ body {
 
 .nav__list {
   display: flex;
+  column-gap: 52px;
 }
 
 .nav__link {
@@ -313,18 +321,6 @@ body {
   gap: var(--gap);
 }
 
-/* @media (max-width: 1024px) {
-  .services__list {
-    --offsets: 2;
-  }  
-}
-
-@media (max-width: 768px) {
-  .services__list {
-    --offsets: 1;
-  }  
-} */
-
 .services__item {
   display: flex;
   flex-direction: column;
@@ -446,6 +442,7 @@ body {
 .articles__blog {
   height: 100%;
 }
+
 .articles__blog:active {
   background-color: #0E3B6C;
 }
@@ -706,13 +703,19 @@ body {
 }
 
 
-/* .input-select {
+.input-select {
   -webkit-appearance: none;
+  /* Стиль для Safari */
+  -moz-appearance: none;
+  /* Стиль для Firefox */
+  appearance: none;
+  /* Стиль для прочих браузеров */
+  background-color: inherit;
   background-image: url("../img/arrow-dropdown.svg");
   background-repeat: no-repeat;
   background-size: 14px;
-  background-position: 90% 50%;
-} */
+  background-position: 93% 50%;
+}
 
 .form__textarea {
   padding: 15px 28px;
